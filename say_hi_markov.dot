@@ -1,0 +1,14 @@
+digraph  {
+Hi;
+Bye;
+Here;
+Hi -> Hi  [key=0, label="0.4", weight="0.4"];
+Hi -> Bye  [key=0, label="0.2", weight="0.2"];
+Hi -> Here  [key=0, label="0.4", weight="0.4"];
+Bye -> Hi  [key=0, label="0.45", weight="0.45"];
+Bye -> Bye  [key=0, label="0.45", weight="0.45"];
+Bye -> Here  [key=0, label="0.1", weight="0.1"];
+Here -> Hi  [key=0, label="0.45", weight="0.45"];
+Here -> Bye  [key=0, label="0.25", weight="0.25"];
+Here -> Here  [key=0, label="0.3", weight="0.3"];
+}

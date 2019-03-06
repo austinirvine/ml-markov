@@ -1,0 +1,17 @@
+digraph  {
+healthy;
+sick;
+Hi;
+Bye;
+Here;
+healthy -> healthy  [key=0, label="0.7", weight="0.7"];
+healthy -> sick  [key=0, label="0.3", weight="0.3"];
+healthy -> Hi  [key=0, label="0.2", weight="0.2"];
+healthy -> Bye  [key=0, label="0.6", weight="0.6"];
+healthy -> Here  [key=0, label="0.2", weight="0.2"];
+sick -> healthy  [key=0, label="0.4", weight="0.4"];
+sick -> sick  [key=0, label="0.6", weight="0.6"];
+sick -> Hi  [key=0, label="0.4", weight="0.4"];
+sick -> Bye  [key=0, label="0.1", weight="0.1"];
+sick -> Here  [key=0, label="0.5", weight="0.5"];
+}
