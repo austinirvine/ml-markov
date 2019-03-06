@@ -201,12 +201,11 @@ def verterbi(pi, a, b, obs):
     print('-'*50)
     print('Start Backtrace\n')
     path[T-1] = np.argmax(delta[:, T-1])
-    #p('init path\n    t={} path[{}-1]={}\n'.format(T-1, T, path[T-1]))
+
     for t in range(T-2, -1, -1):
         a = int(path[t+1])
         b = [t+1]
         path[t] = phi[a, b]
-        #p(' '*4 + 't={t}, path[{t}+1]={path}, [{t}+1]={i}'.format(t=t, path=path[t+1], i=[t+1]))
         print('path[{}] = {}'.format(t, path[t]))
 
     return path, delta, phi
